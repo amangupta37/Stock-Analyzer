@@ -24,7 +24,7 @@ main {
   background: url("https://media.giphy.com/media/S4178TW2Rm1LW/giphy.gif");
 }
 footer {
-  height: 150px;
+  height: 200px;
   background-color: #000;
   display: grid;
   place-items: center;
@@ -167,7 +167,6 @@ button {
   width: 70%;
   margin: 0 auto;
   margin-top: 0.5rem;
-
   display: flex;
   justify-content: space-between;
 }
