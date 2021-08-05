@@ -6,6 +6,7 @@ const ReslutPage = document.getElementById("displayResult");
 const ShowResultInNum = document.getElementById("resultInNum");
 const ShowResultInPercent = document.getElementById("resultInPercentage");
 const closeBtn = document.getElementById("close");
+const resultBox = document.getElementById("resultContianer");
 let purchase_price = 0;
 let stock_quanitiy = 0;
 let current_price = 0;
@@ -22,6 +23,8 @@ const AnalyseStock = (purchase_price, stock_quanitiy, current_price) => {
     ReslutPage.style.display = "grid";
     ReslutPage.style.color = "red";
     ReslutPage.style.backgroundImage =
+      "url(https://media.giphy.com/media/lSzQjkthGS1gc/giphy.gif)";
+    resultBox.style.backgroundImage =
       "url(https://media.giphy.com/media/lSzQjkthGS1gc/giphy.gif)";
     ShowResultInNum.innerHTML = `You lost  ₹ ${Loss} `;
     ShowResultInPercent.innerHTML = ` Your total loss is  ${LossInPercent}%`;
