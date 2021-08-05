@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock : Analyzer</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div class="logoHolder">
+          <img src="https://img.icons8.com/nolan/256/graph-report.png" />
+        </div>
+        <div class="appTitle"><h1>Stock Analyzer</h1></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="description">
+        <h2>Check Profit or Loss on your Stock !</h2>
+      </section>
+      <section class="stock">
+        <div class="stock__details">
+          <div class="puchase">
+            <!-- <label for="purchase_price">Purchase Price : </label> -->
+            <input
+              type="number"
+              id="purchase_price"
+              placeholder="stock purchase price"
+            />
+          </div>
+
+          <div class="quantity">
+            <!-- <label for="quantity">Quantity : </label> -->
+            <input type="number" id="quantity" placeholder="stock quantity" />
+          </div>
+
+          <div class="current_price">
+            <!-- <label for="current_price">Current Stock Price : </label> -->
+            <input
+              type="number"
+              id="current_price"
+              placeholder="stock current price"
+            />
+          </div>
+        </div>
+        <button type="button" id="btn">check</button>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="./App.js"></script>
+</html>
