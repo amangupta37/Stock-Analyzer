@@ -230,4 +230,8 @@ button {
     width: 50%;
     margin: 0 auto;
   }
+
+  .connect > img {
+    border: 1px solid #0f63e4;
+  }
 }
