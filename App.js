@@ -22,10 +22,12 @@ const AnalyseStock = (purchase_price, stock_quanitiy, current_price) => {
 
     ReslutPage.style.display = "grid";
     ReslutPage.style.color = "red";
-    ReslutPage.style.backgroundImage =
-      "url(https://media.giphy.com/media/lSzQjkthGS1gc/giphy.gif)";
+
+    ReslutPage.style.backgroundColor = "#000";
+
     resultBox.style.backgroundImage =
       "url(https://media.giphy.com/media/lSzQjkthGS1gc/giphy.gif)";
+
     ShowResultInNum.innerHTML = `You lost  ₹ ${Loss} `;
     ShowResultInPercent.innerHTML = ` Your total loss is  ${LossInPercent}%`;
   } else {
@@ -33,6 +35,7 @@ const AnalyseStock = (purchase_price, stock_quanitiy, current_price) => {
     const ProfitInPercent = (Profit / TotalAmountSpent) * 100;
     ReslutPage.style.backgroundImage =
       "url(https://media.giphy.com/media/JtBZm3Getg3dqxK0zP/giphy.gif)";
+    resultBox.style.backgroundImage = "none";
     ReslutPage.style.display = "grid";
     ReslutPage.style.color = "lime";
 
