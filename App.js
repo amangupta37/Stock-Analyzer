@@ -23,6 +23,7 @@ const AnalyseStock = (purchase_price, stock_quanitiy, current_price) => {
     ReslutPage.style.display = "grid";
     ReslutPage.style.color = "red";
 
+    ReslutPage.style.backgroundImage = "none";
     ReslutPage.style.backgroundColor = "#000";
 
     resultBox.style.backgroundImage =
