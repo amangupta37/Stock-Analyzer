@@ -24,7 +24,7 @@ main {
   background: url("https://media.giphy.com/media/S4178TW2Rm1LW/giphy.gif");
 }
 footer {
-  height: 200px;
+  height: 100px;
   background-color: #000;
   display: grid;
   place-items: center;
@@ -183,20 +183,33 @@ button {
 
 /*  desktop responsive */
 @media only screen and (min-width: 1000px) {
+  header {
+    height: 30px;
+  }
+
   main {
     width: 90%;
+    height: 70vh;
     margin: 0 auto;
     border-radius: 0.5rem;
-    margin-top: 8rem;
-    margin-bottom: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
+  footer {
+    height: auto;
+    background-color: #000;
+    display: grid;
+    place-items: center;
+    border-top: 3px solid #21262d;
+  }
+
   .logo {
-    font-size: 1.2rem;
-    padding: 2rem;
+    font-size: 1rem;
+    padding: 0.8rem;
     gap: 0.5rem;
   }
 
@@ -212,16 +225,23 @@ button {
     padding: 1rem;
     font-size: 1.5rem;
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 4rem;
+  }
+  .wrapper {
+    height: 100%;
+    margin-top: 2rem;
+    background: rgba(0, 0, 0, 0.7);
   }
 
   .stock {
     width: 30%;
+    margin-top: 0;
     border: 2px solid #0f63e4;
   }
 
   .connectWrapper {
     width: 35%;
+    padding-top: 1rem;
   }
 
   .resultContianer {
@@ -233,9 +253,17 @@ button {
     padding-top: 7rem;
   }
 
+  .connectWrapper {
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+  }
+
   .connect {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
 
   .connect > img {
